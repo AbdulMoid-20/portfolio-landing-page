@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --primary-color: #9b5cff;
+  --secondary-color: #d2b6ff;
+  --background-color: #ffffff;
+  --text-color: #1a1a1a;
+}
+
+body{
+  background: linear-gradient(-218deg,#9b5cff 0%, rgba(255, 255, 255, 1) 50%);
+  background-size: cover;
+  background-attachment: fixed; 
+  color: var(--text-color);
+}
+
+header{
+  
+  background-color: var(--background-color);
+}
+
+a{
+  color: var(--text-color);
+}
+
+.vw-80{
+  width: 90vw; 
+  margin: auto;
+}
+
+.height{
+  width: 450px;
+  height: 450px;
+}
+.height-2{
+  width: 350px;
+  height: 430px;
+}
+
+.btn-primary{
+  background-color: var(--primary-color);
+  border: var(--primary-color) 2px solid;
+  box-shadow: 5px 5px 10px var(--primary-color);
+  transition: .5s ;
+}
+
+.btn-secondary{
+  margin-left: 20px;
+  background: transparent;
+  color: var(--text-color);
+  border: 1px solid #33333364;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  transition: .5s;
+}
+
+.btn-secondary:hover{
+  background: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  transform: translateY(-5px);
+}
+
+.btn-primary:hover{
+  background-color: var(--background-color);
+  box-shadow: 5px 5px 5px var(--primary-color);
+  color: var(--primary-color);
+  border: var(--primary-color) 2px solid;
+  transform: translateY(-5px);
+}
+
+.hover {
+  position: relative;
+  display: inline-block;
+  color: inherit;
+  transition: color 0.3s ease, transform 0.3s ease;
+  padding-bottom: 3px;
+}
+
+.hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 3px;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.hover:hover {
+  color: var(--primary-color);
+  transform: translateY(-3px);
+}
+
+.hover:hover::after {
+  width: 100%;
+}
+
+.border-shadow{
+  border: var(--secondary-color) 4px solid;
+  box-shadow: 0 0 25px var(--primary-color);
+  
+}
+
+.color{
+   color: gray;
+}
